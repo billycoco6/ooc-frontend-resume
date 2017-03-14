@@ -4,8 +4,8 @@ import SignIn from '@/components/SignIn'
 import SignUp from '@/components/users/SignUp'
 import Profile from '@/components/users/Profile'
 import PostsIndex from '@/components/posts/Index.vue'
-import PostsShow from '@/components/posts/Show.vue'
-import PostsNew from '@/components/posts/New.vue'
+// import PostsShow from '@/components/posts/Show.vue'
+// import PostsNew from '@/components/posts/New.vue'
 
 Vue.use(Router)
 
@@ -37,16 +37,16 @@ export default new Router({
       path: '/posts',
       name: 'Posts.index',
       component: PostsIndex
-    },
-    {
-      path: '/posts/new',
-      name: 'Posts.new',
-      component: PostsNew
-    },
-    {
-      path: '/posts/:id',
-      name: 'Posts.show',
-      component: PostsShow
     }
+    // {
+    //   path: '/posts/new',
+    //   name: 'Posts.new',
+    //   component: PostsNew
+    // },
+    // {
+    //   path: '/posts/:id',
+    //   name: 'Posts.show',
+    //   component: PostsShow
+    // }
   ]
 })

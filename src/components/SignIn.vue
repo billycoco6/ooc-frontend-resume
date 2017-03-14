@@ -26,7 +26,7 @@
       <md-list-item>
         <span style="flex: 1"></span>
         <md-button class="md-raised md-primary" @click.native="login">Login</md-button>
-        Not a member? <a @click="navigateTo('Users.sign_up')">Join now</a>
+        Not a member?&nbsp<a @click="navigateTo('Users.sign_up')">Join now</a>
         <span style="flex: 1"></span>
       </md-list-item>
     </md-list>
