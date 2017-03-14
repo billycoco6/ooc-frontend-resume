@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import SignIn from '@/components/SignIn'
 import SignUp from '@/components/users/SignUp'
+import Profile from '@/components/users/Profile'
 import PostsIndex from '@/components/posts/Index.vue'
 import PostsShow from '@/components/posts/Show.vue'
 import PostsNew from '@/components/posts/New.vue'
@@ -21,6 +22,11 @@ export default new Router({
       path: '/sign_in',
       name: 'Users.sign_in',
       component: SignIn
+    },
+    {
+      path: '/profile',
+      name: 'Users.profile',
+      component: Profile
     },
     {
       path: '/sign_up',

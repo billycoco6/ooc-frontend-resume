@@ -13,7 +13,10 @@
         </div>
         <md-list>
           <md-list-item>
-            <router-link :to="{ name: 'Posts.index' }"><md-icon>move_to_inbox</md-icon> <span>Post</span></router-link>
+            <router-link :to="{ name: 'Users.profile' }"><md-icon>move_to_inbox</md-icon> <span>Profile</span></router-link>
+          </md-list-item>
+          <md-list-item>
+            <router-link :to="{ name: 'Posts.index' }"><md-icon>move_to_inbox</md-icon> <span>Feeds</span></router-link>
           </md-list-item>
           <md-list-item>
             <router-link :to="{ name: 'Users.sign_in' }"><md-icon>move_to_inbox</md-icon> <span>Log out</span></router-link>
