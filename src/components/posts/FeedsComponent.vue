@@ -43,16 +43,14 @@ export default {
   data () {
     return {
       limitNumber: 2,
-      newDat: [
-        {
-          JobName: 'IT Auditor (Information Risk Management)',
-          JobPlace: 'KPMG Phoomchai Audit Ltd.',
-          JobLocations: 'Sathorn',
-          JobDescriptionShort: 'Our IT Audit processionals help organizations enhance the effectiveness and efficiency of critical in-house governance, internal audit and regulatory compliance functions.',
-          JobDescriptionLong: 'By focusing on regulatory and compliance, we help clients proactively comply with regulatory requirements (including SOX regulations) as well as effectively secure and monitor systems and data to help improve the compliance functions. We help mitigate regulatory and compliance risks that could lead to losses from non-compliance, litigation, or regulatory and compliance risks that could lead to losses from non-compliance, litigation, or regulatory sanctions and fines.',
-          ImageLogo: 'image/IT_Auditor.JPG'
-        }
-      ],
+      newDat: {
+        JobName: 'IT Auditor (Information Risk Management)',
+        JobPlace: 'KPMG Phoomchai Audit Ltd.',
+        JobLocations: 'Sathorn',
+        JobDescriptionShort: 'Our IT Audit processionals help organizations enhance the effectiveness and efficiency of critical in-house governance, internal audit and regulatory compliance functions.',
+        JobDescriptionLong: 'By focusing on regulatory and compliance, we help clients proactively comply with regulatory requirements (including SOX regulations) as well as effectively secure and monitor systems and data to help improve the compliance functions. We help mitigate regulatory and compliance risks that could lead to losses from non-compliance, litigation, or regulatory and compliance risks that could lead to losses from non-compliance, litigation, or regulatory sanctions and fines.',
+        ImageLogo: 'image/IT_Auditor.JPG'
+      },
       computed: {
         filteredItems: function () {
           return this.newDat.slice(0, this.limitNumber)
